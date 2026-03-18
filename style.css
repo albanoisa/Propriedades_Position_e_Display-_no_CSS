@@ -1,28 +1,160 @@
-
-#navbar {
-    background-color: rgba(189, 128, 247, 0.849);
-    color: rgb(255, 254, 255);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#noticias {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    padding: 6px;
-    
-}
-
-.noticia{
-    background-color: rgb(231, 156, 209);
+.titulo{
+    background-color: rgb(189, 9, 93);
     color: rgb(255, 255, 255);
+    height: 80px;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
 }
 
-.noticia{
-    width: 200px;
-    height: 200px;
+.elementos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 950px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);  
+    flex-wrap: wrap;
 }
+
+.textos {
+text-align: left;
+}
+
+.subtitulo {
+    text-align: center;
+}
+
+.quadrado{
+    height: 20px;
+    width: 20px;
+    color: white;
+    padding: 20px;
+    margin: 10px;
+     background-color: rgb(196, 71, 129);
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.rosa{
+    background-color: rgb(196, 71, 129);
+}
+
+
+.block{
+    background-color: rgb(196, 71, 129);
+    color: white;
+    margin: 10px;
+    padding: 20px;
+}
+
+.inline{
+    display: inline flow-root;
+    padding: 10px;
+    margin: 10px;
+}
+
+.flex{
+    display: flex;
+    padding: 10px;
+    margin: 10px;
+}
+
+.inlineflex{
+    display: inline-flex;
+    padding: 10px;
+    margin: 10px;
+}
+
+.inlineblock{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+.grid{
+    display: grid;
+    padding: 10px;
+    margin: 10px;
+}
+
+.inlinegrid{
+    display: inline-grid;
+    padding: 10px;
+    margin: 10px;
+}
+
+.blockflow{
+    display: flow-root;
+    padding: 10px;
+    margin: 10px;
+}
+
+.table{
+    display: table;
+    padding: 10px;
+    margin: 10px;
+}
+
+.blockflex{
+    display: block flex;
+    padding: 10px;
+    margin: 10px;
+}
+
+.blockgrid{
+    display: block grid;
+    padding: 10px;
+    margin: 10px;
+}
+
+.blockflow-root{
+    display: block flow-root;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(196, 71, 129);
+}
+
+.inlineflex2{
+    display: inline flex;
+    padding: 10px;
+    margin: 10px;
+}
+
+.inlinegrid2{
+    display: inline grid;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+.inlineflow-root{
+    display: inline flow-root;
+    padding: 10px;
+    margin: 10px;
+}
+
+.flow-root{
+    display: flow-root;
+    padding: 7px;
+    margin: 7px;
+}
+
+.item{
+    background-color: rgb(196, 71, 129);
+    color: white;
+    margin: 10px;
+    padding: 20px;
+}
+
+.grid-bloco {
+    display: grid;
+    grid-template-columns: repeat(2, 40px);
+  }
+
+  .grid-inline {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 40px);
+    vertical-align: middle;
+  }

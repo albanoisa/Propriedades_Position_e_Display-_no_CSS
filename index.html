@@ -2,58 +2,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Propriedades Position e Display no CSS</title>
-     <link rel="stylesheet" href="style.css">
+    <title>Propiedades Position e Display no CSS</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+   
     <header>
-        <div id="navbar"> 
-            <h2> Propriedades Position e Display no CSS </h2>
-        </div>
-
-        <section id="noticia"> 
-
-            <div class="noticia">
-                <h4> Display </h4>
-                <p> display-outside </p>
-                <p> Essas palavras-chave especificam o tipo de exibição externa do elemento, que é essencialmente sua função no layout de fluxo. </p>
-            </div>
-                    <h4> Block </h4>
-                    <p> O elemento gera uma caixa de elemento de bloco, gerando quebras de linha antes e depois do elemento quando no fluxo normal. </p>
-                    <h4> Inline </h4>
-                    <p> O elemento gera uma ou mais caixas de elemento em linha que não geram quebras de linha antes ou depois de si mesmas. No fluxo normal, o próximo elemento estará na mesma linha se houver espaço.</p>
-                    <h4> display-inside </h4>
-                    <p> Estas palavras-chave especificam o tipo de exibição interna do elemento, que define o tipo de contexto de formatação em que seu conteúdo é apresentado (supondo que seja um elemento não substituído).</p>
-                    <h4> Experimental </h4>
-                    <p> O elemento apresenta seu conteúdo usando o layout de fluxo (layout de bloco e linha).</p>
-                    <p> Se seu tipo de exibição externa for inline ou run-in, e estiver participando de um bloco ou contexto de formatação inline, ele gerará uma caixa inline. Caso contrário, gera uma caixa de contêiner de bloco.
-            Dependendo do valor de outras propriedades (como position, float ou overflow) e se ele próprio está participando em um contexto de formatação em bloco ou em linha, ele estabelece um novo contexto de formatação de bloco (BFC) para seu conteúdo ou integra seu conteúdo em seu contexto de formatação pai.</p>
-                    <h4> flow-root</h4>
-                    <p> O elemento gera uma caixa de elemento de bloco que estabelece um novo contexto de formatação de bloco, definindo onde está a raiz de formatação.</p>
-                    <h4> table </h4>
-                    <p> Esses elementos se comportam como elementos HTML <table>. Ele define uma caixa de nível de bloco. </p>
-                    <h4> flex </h4>
-                    <p> O elemento se comporta como um elemento de bloco e apresenta seu conteúdo de acordo com o modelo flexbox. </p>
-                    <h4> grid </h4>
-                    <p> O elemento se comporta como um elemento de bloco e apresenta seu conteúdo de acordo com o modelo de grade. </p>
-                    <h4> ruby </h4>
-                    <p> O elemento se comporta como um elemento inline e apresenta seu conteúdo de acordo com o modelo de formatação ruby. Ele se comporta como os elementos HTML <ruby> correspondentes.</p>
-                    <h4> display-listitem </h4>
-                    <p> O elemento gera uma caixa de bloco para o conteúdo e uma caixa inline de item de lista separada. </p>
-                    <p> Um único valor de list-item fará com que o elemento se comporte como um item de lista. Isso pode ser usado junto com list-style-type e list-style-position.
-            list-item também pode ser combinado com qualquer palavra-chave <display-outside> e flow ou flow-root <display-inside> palavras-chave. </p>
-                    <h4> display-internal </h4>
-                    <p> Alguns modelos de layout como table e ruby possuem uma estrutura interna complexa, com vários papéis diferentes que seus filhos e descendentes podem preencher. Esta seção define os valores de exibição "internos", que só têm significado dentro desse modo de layout específico.</p>
-                    <h4> table-row-group </h4>
-                    <p> Esses elementos se comportam como tbody elementos HTML.</p>
-                    <h4> table-header-group </h4>
-                    <p> Esses elementos se comportam como <thead> elementos HTML. </p>
-                    <h4> table-footer-group </h4>
-                    <p> Esses elementos se comportam como <tfoot> elementos HTML. </p>
-        </section>
-
+        
+        <nav class="titulo">
+            <h1>Propriedades Position e Display no CSS</h1>
+        </nav>
     </header>
 
+    <main>
+
+        <div class="elementos">
+            <div>
+            <h1> POSITION </h1>
+
+                <p> A propriedade position do CSS é um recurso que permite organizar os elementos HTML dentro de uma página. É esse recurso que possibilita, por exemplo, manter um menu ou um botão sempre visível em uma página, independentemente da posição da barra de rolagem.</p>
+            
+                <h2>Explicação dos valores da propriedade position:</h2>
+
+                <p> Static: A posição padrão de todos os elementos HTML é a static. Ela é utilizada quando não é necessário alterar o posicionamento do elemento, deixando que ele apareça na mesma ordem em que está inserido no código. </p>
+
+                <p> Relative: Ao utilizar o valor relative, é possível reposicionar o componente utilizando os padrões top, button, left e right, sem que esse elemento perca o seu espaço original no layout da página. Essa propriedade é muito usada para organizar movimentos sutis, e que não vão impactar nos demais itens da página.</p>
+
+                <p> Absolute: Um elemento com a configuração position: absolute não faz parte do fluxo normal da página, por isso, ele não tem um espaço próprio no layout e todas as outras estruturas se comportam como se ele não existisse.</p>
+
+                <p> Fixed: O valor fixed tem o objetivo de fixar um elemento em um ponto específico da página, permanecendo sempre da mesma forma, não sendo afetado pela barra de rolagem.  Além disso, ele também faz com que o item seja completamente removido do fluxo da página</p>
+            
+                <p> Sticky: Esse valor combina os comportamentos do relative e do fixed. Isso significa que o elemento com o position: sticky segue o fluxo da página até um determinado ponto, quando passa a ser fixo.  O uso do fixed é muito comum quando é necessário deixar um componente visível por um determinado período, como um menu lateral, por exemplo.</p>
+
+                <br> <br>
+
+                <h1> DISPLAY </h1>
+
+                 <div class="dblock">
+                    <p class="palavras"> Block: É uma propriedade CSS que faz com que um elemento HTML ocupe toda a largura disponível (100%), forçando uma quebra de linha antes e depois dele.</p>
+                    <div class="block"></div>
+                    <div class="block"></div>
+                </div>    
+
+                 <div class="blockflow">
+                     <p class="texto"> Block flow: Define que um elemento ocupe toda a largura disponível (100% do pai) e inicie em uma nova linha, gerando quebras antes e depois dele.</p>
+                 </div>
+
+                 <div class="blockflex">
+                    <p class="texto"> Block flex: Transforma um elemento em um contêiner flexível, organizando seus filhos automaticamente em linha ou coluna. </p> 
+                 </div>
+
+                  <div class="blockgrid">
+                        <p class="texto"> Block grid: é um sistema de layout bidimensional que organiza elementos em linhas e colunas simultaneamente.</p> 
+                 </div>
+
+                  <div class="Blockflow-root">
+                        <p class="texto"> Block flow-root: Cria uma caixa de bloco, mas, diferentemente do block comum, ele estabelece um novo contexto de formatação de bloco.</p> 
+                   <div class="blockflow-root"></div>
+                    </div> 
+
+                    <br> <br>
+
+                 <div class="inline">
+                    <p> Inline: Faz com que elementos HTML fiquem um ao lado do outro na mesma linha, ocupando apenas a largura necessária para o seu conteúdo. </p>
+                </div>
+                
+                 <div class="inlineblock">
+                    <p> Inline-block: O elemento gera uma caixa de elemento de bloco que fluirá com o conteúdo ao redor como se fosse uma única caixa em linha.</p>
+                </div>
+                  
+                <div class="inlineflex">
+                     <p class="texto"> Inline-flex: O elemento se comporta como um elemento inline e apresenta seu conteúdo de acordo com o modelo flexbox.</p>
+                     <div class="quadrado"></div>
+                     <div class="quadrado"></div>
+                     <div class="quadrado"></div>
+                </div>
+                    
+                 <div class="inlinegrid">
+                        <p class="texto"> Inline grid: O elemento se comporta como um elemento inline e apresenta seu conteúdo de acordo com o modelo de grade.</p>
+                 </div>
+
+                 <div class="inlineflow-root">
+                        <p class="texto"> Inline flow-root: Funciona como um bloco na mesma linha, aceitando dimensões e margens normalmente. </p>
+                 </div>
+
+                 <div class="grid">
+                     <p> Grid: Define um elemento como um contêiner de grade, permitindo organizar itens filhos em linhas e colunas estruturadas. </p>
+                      <div class="item"></div>
+                      <div class="item"></div>
+                      <div class="item"></div>
+                 </div>
+
+                  <div class="flex">
+                     <p class="texto">Flex: Transforma um container HTML em um contêiner flexível, alinhando automaticamente seus elementos filhos em uma linha ou coluna.</p>
+                      <div class="quadrado"></div>
+                      <div class="quadrado"></div>
+                      <div class="quadrado"></div>
+                  </div>
+                 
+                  <div class="flow-root">
+                     <p class="texto"> Flow-root: O elemento gera uma caixa de elemento de bloco que estabelece um novo contexto de formatação de bloco, definindo onde está a raiz de formatação. </p>
+                      <div class="item"></div>
+                      <div class="item"></div>
+                 </div>      
+
+                 <div class="table">
+                     <p class="texto"> Table: Esses elementos se comportam como elementos HTML table. Ele define uma caixa de nível de bloco.</p>   
+                 <table border="5">
+                <tr>
+                <td>Nome</td>
+                 <td>Idade</td>
+                 </tr>
+                  <tr>
+                 <td>Gabriela</td>
+                 <td>17</td>
+                 </tr>
+                 <tr>
+                 <td>Isabela</td>
+                 <td>17</td>
+                 </tr>
+                 <tr>
+                 <td>Duda</td>
+                 <td>16</td>
+                 </tr>
+             </table>
+</table>
+                    </div>
+               
+            </div> 
+        
+        </div>
+        
+        </div>
+        
+       </div>
+
+    </main>
 </body>
+
 </html>
